@@ -1,0 +1,28 @@
+GET http://127.0.0.1:8000/snippets
+
+### 
+
+POST http://127.0.0.1:8000/snippets/
+
+{
+    "code": "x=1\n"
+}
+
+
+###
+
+GET  http://127.0.0.1:8000/snippets/4
+
+
+### 
+
+PUT http://127.0.0.1:8000/snippets/3
+
+{
+    "code": "a, b = 1, 2\n",
+    "linenos": true
+}
+
+### 
+
+DELETE http://127.0.0.1:8000/snippets/3

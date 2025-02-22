@@ -67,3 +67,21 @@ True
 >>> snippets.data
 [{'id': 1, 'title': '', 'code': "foo = 'bar'\n", 'linenos': False, 'language': 'python', 'style': 'friendly'}, {'id': 2, 'title': '', 'code': 'print("Hello world")\n', 'linenos': False, 'language': 'python', 'style': 'friendly'}, {'id': 3, 'title': '', 'code': 'print("Hello world")', 'linenos': False, 'language': 'python', 'style': 'friendly'}]
 ```
+
+## Komunikacja z API z poziomu klienta:
+
+### z poziomu konsoli
+
+#### CURL
+
+#### httpie
+
+pip install httpie
+
+
+### z poziomu IDE (np. REST CLIENT)
+
+* tworzymy dokument z rozszerzeniem http
+* dajemy tam zapytania oddzielajac je ###
+
+### Narzędzia takie jak POSTMAN, Insomnia
