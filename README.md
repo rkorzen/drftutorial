@@ -37,4 +37,25 @@ b'{"id":2,"title":"","code":"print(\\"Hello world\\")\\n","linenos":false,"langu
 dict
 
 >>> serializer = SnippetSerializer(data=data)
+>>> serializer.is_valid()
+True
+
+>>> serializer.validated_data
+{'title': '',
+ 'code': 'print("Hello world")',
+ 'linenos': False,
+ 'language': 'python',
+ 'style': 'friendly'}
+
+
+>>> serializer.save()
+>>> <Snippet: Snippet object (3)>
+>>> serializer.data
+{'id': 3, 'title': '', 'code': 'print("Hello world")', 'linenos': False, 'language': 'python', 'style': 'friendly'}
+
+>>> snippets = SnippetSerializer(Snippet.objects.all(), many=True)
+>>> snippets.data
+[{'id': 1, 'title': '', 'code': "foo = 'bar'\n", 'linenos': False, 'language': 'python', 'style': 'friendly'}, {'id': 2, 'title': '', 'code': 'print("Hello world")\n', 'linenos': False, 'language': 'python', 'style': 'friendly'}, {'id': 3, 'title': '', 'code': 'print("Hello world")', 'linenos': False, 'language': 'python', 'style': 'friendly'}]
+
 ```
+
