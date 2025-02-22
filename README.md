@@ -85,3 +85,20 @@ pip install httpie
 * dajemy tam zapytania oddzielajac je ###
 
 ### Narzędzia takie jak POSTMAN, Insomnia
+
+
+
+## Zadanie 1
+
+
+Utwórz projekt movies_library.
+Dodaj model Movie (title. genre, time, rate, number_of_rents)
+Dodać do aplikacji blog operacje CRUD realizowane poprzez API
+
+
+GET /api/v1/movies - lista filnow
+POST /api/v1/movies - tworz nowy film
+
+GET /api/v1/movies/1 - szczegoly filmu
+PUT /api/v1/movies/1 - aktualizacja
+DELETE /api/v1/movies/1 - usuniecie filmu
