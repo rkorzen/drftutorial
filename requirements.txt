@@ -1,0 +1,5 @@
+django
+djangorestframework
+pygments
+
+# pip install -r requirements.txt
