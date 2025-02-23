@@ -39,6 +39,17 @@ Content-Type: application/json
 }
 
 
+###
+
+POST http://localhost:8000/api-token-auth/
+Content-Type: application/json
+
+{
+    "username": "xxx",
+    "password": "123"
+}
+
+
 ### 
 POST http://localhost:8000/snippets/
 Authorization: Token fbeb3969de7d332f089342045869659c66c5b24d
@@ -47,4 +58,26 @@ Content-Type: application/json
 
 {
     "code": "10 + 20"
+}
+
+
+###  xxx
+
+PUT http://localhost:8000/snippets/1
+Authorization: Token fbeb3969de7d332f089342045869659c66c5b24d
+Content-Type: application/json
+
+
+{
+    "code": "10 + 20 + 30 + 40"
+}
+
+### rkorzen
+PUT http://localhost:8000/snippets/1
+Authorization: Token d201e7fd950c94c235e264be0bbca1cd6a88aa36
+Content-Type: application/json
+
+
+{
+    "code": "10 + 20 + 30 + 40"
 }
