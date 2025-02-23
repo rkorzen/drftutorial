@@ -74,6 +74,10 @@ True
 
 #### CURL
 
+CURL http://127.0.0.1:8000/snippets/
+
+CURL -X POST http://127.0.0.1:8000/snippets/ -H "Content-Type: application/json" -d '{"title": "Hello world", "code": "print('Hello world')"}'
+
 #### httpie
 
 pip install httpie

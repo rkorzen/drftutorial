@@ -26,3 +26,43 @@ PUT http://127.0.0.1:8000/snippets/3
 ### 
 
 DELETE http://127.0.0.1:8000/snippets/3
+
+
+###
+
+POST http://localhost:8000/api-token-auth/
+Content-Type: application/json
+
+{
+
+    "username": "rkorzen",
+    "password": "123"
+}
+
+###
+
+POST http://127.0.0.1:8000/snippets/
+Authorization: Token 199d96116d4ea2baa6ba6fe1df6356e27c3a90ae
+Content-Type: application/json
+
+{
+    "code": "x=1\n"
+}
+
+
+###
+
+POST http://127.0.0.1:8000/snippets/
+Authorization: Token 199d96116d4ea2baa6ba6fe1df6356e27c3a90ae
+Content-Type: multipart/form-data; boundary=MfnBoundry
+
+--MfnBoundry
+Content-Disposition: form-data; name="file"; filename="asgi.py"
+Content-Type: text/plain
+
+< ./tutorial/asgi.py
+--MfnBoundry--
+
+
+
+
