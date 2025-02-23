@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="robots" content="NONE,NOARCHIVE">
-  <title>AttributeError
-          at /snippets/3</title>
+  <title>OperationalError
+          at /api-token-auth/</title>
   <style>
     html * { padding:0; margin:0; }
     body * { padding:10px 20px; }
@@ -100,51 +101,51 @@
 </head>
 <body>
 <header id="summary">
-  <h1>AttributeError
-       at /snippets/3</h1>
-  <pre class="exception_value">&#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x27;</pre>
+  <h1>OperationalError
+       at /api-token-auth/</h1>
+  <pre class="exception_value">no such table: authtoken_token</pre>
   <table class="meta">
 
     <tr>
       <th scope="row">Request Method:</th>
-      <td>DELETE</td>
+      <td>POST</td>
     </tr>
     <tr>
       <th scope="row">Request URL:</th>
-      <td>http://127.0.0.1:8000/snippets/3</td>
+      <td>http://localhost:8000/api-token-auth/</td>
     </tr>
 
     <tr>
       <th scope="row">Django Version:</th>
-      <td>5.1.4</td>
+      <td>5.1.6</td>
     </tr>
 
     <tr>
       <th scope="row">Exception Type:</th>
-      <td>AttributeError</td>
+      <td>OperationalError</td>
     </tr>
 
 
     <tr>
       <th scope="row">Exception Value:</th>
-      <td><pre>&#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x27;</pre></td>
+      <td><pre>no such table: authtoken_token</pre></td>
     </tr>
 
 
     <tr>
       <th scope="row">Exception Location:</th>
-      <td><span class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/snippets/views.py</span>, line 56, in snippet_detail</td>
+      <td><span class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py</span>, line 354, in execute</td>
     </tr>
 
 
     <tr>
       <th scope="row">Raised during:</th>
-      <td>snippets.views.snippet_detail</td>
+      <td>rest_framework.authtoken.views.ObtainAuthToken</td>
     </tr>
 
     <tr>
       <th scope="row">Python Executable:</th>
-      <td>/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/bin/python</td>
+      <td>/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/bin/python</td>
     </tr>
     <tr>
       <th scope="row">Python Version:</th>
@@ -156,11 +157,11 @@
  &#x27;/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python313.zip&#x27;,
  &#x27;/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13&#x27;,
  &#x27;/usr/local/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload&#x27;,
- &#x27;/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/lib/python3.13/site-packages&#x27;]</code></pre></td>
+ &#x27;/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages&#x27;]</code></pre></td>
     </tr>
     <tr>
       <th scope="row">Server time:</th>
-      <td>Sat, 22 Feb 2025 12:15:07 +0000</td>
+      <td>Sun, 23 Feb 2025 08:14:07 +0000</td>
     </tr>
   </table>
 </header>
@@ -180,48 +181,48 @@
         
         <li class="frame django">
           
-            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/lib/python3.13/site-packages/django/core/handlers/exception.py</code>, line 55, in inner
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py</code>, line 105, in _execute
           
 
           
-            <div class="context" id="c4586474880">
+            <div class="context" id="c4358912768">
               
-                <ol start="48" class="pre-context" id="pre4586474880">
+                <ol start="98" class="pre-context" id="pre4358912768">
                 
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre></pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
                 
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>        return inner</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
                 
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>    else:</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        with self.db.wrap_database_errors:</pre></li>
                 
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre></pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            if params is None:</pre></li>
                 
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>        @wraps(get_response)</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>                # params default might be backend specific.</pre></li>
                 
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>        def inner(request):</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>                return self.cursor.execute(sql)</pre></li>
                 
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>            try:</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            else:</pre></li>
                 
                 </ol>
               
-              <ol start="55" class="context-line">
-                <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>                response = get_response(request)
-                               ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              <ol start="105" class="context-line">
+                <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>                return self.cursor.execute(sql, params)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
               </ol>
               
-                <ol start='56' class="post-context" id="post4586474880">
+                <ol start='106' class="post-context" id="post4358912768">
                   
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>            except Exception as exc:</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>    def _executemany(self, sql, param_list, *ignored_wrapper_args):</pre></li>
                   
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>            return response</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
                   
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre></pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        # ever set during testing).</pre></li>
                   
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre>        return inner</pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
                   
-                  <li onclick="toggle('pre4586474880', 'post4586474880')"><pre></pre></li>
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
                   
               </ol>
               
@@ -233,7 +234,206 @@
               <details>
                 <summary class="commands">Local vars</summary>
             
-            <table class="vars" id="v4586474880">
+            <table class="vars" id="v4358912768">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;sqlite&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = %s LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py</code>, line 354, in execute
+          
+
+          
+            <div class="context" id="c4358902336">
+              
+                <ol start="347" class="pre-context" id="pre4358902336">
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>    def execute(self, query, params=None):</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        if params is None:</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>            return super().execute(query)</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        # Extract names if params is a mapping, i.e. &quot;pyformat&quot; style is used.</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        param_names = list(params) if isinstance(params, Mapping) else None</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        query = self.convert_query(query, param_names=param_names)</pre></li>
+                
+                </ol>
+              
+              <ol start="354" class="context-line">
+                <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        return super().execute(query, params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='355' class="post-context" id="post4358902336">
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>    def executemany(self, query, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        # Extract names if params is a mapping, i.e. &quot;pyformat&quot; style is used.</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        # Peek carefully as a generator can be passed instead of a list/tuple.</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        peekable, param_list = tee(iter(param_list))</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        if (params := next(peekable, None)) and isinstance(params, Mapping):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358902336">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>__class__</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.backends.sqlite3.base.SQLiteCursorWrapper&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>param_names</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>query</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = ? LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x103b52c30&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+          <li class="cause"><h3>
+          
+            The above exception (no such table: authtoken_token) was the direct cause of the following exception:
+          
+        </h3></li>
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py</code>, line 55, in inner
+          
+
+          
+            <div class="context" id="c4358902144">
+              
+                <ol start="48" class="pre-context" id="pre4358902144">
+                
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="55" class="context-line">
+                <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>                response = get_response(request)
+                               ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='56' class="post-context" id="post4358902144">
+                  
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre4358902144', 'post4358902144')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358902144">
               <thead>
                 <tr>
                   <th scope="col">Variable</th>
@@ -244,17 +444,17 @@
                 
                   <tr>
                     <td>exc</td>
-                    <td class="code"><pre>AttributeError(&quot;&#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x27;&quot;)</pre></td>
+                    <td class="code"><pre>OperationalError(&#x27;no such table: authtoken_token&#x27;)</pre></td>
                   </tr>
                 
                   <tr>
                     <td>get_response</td>
-                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x11130d6a0&gt;&gt;</pre></td>
+                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x103b3af90&gt;&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&lt;WSGIRequest: DELETE &#x27;/snippets/3&#x27;&gt;</pre></td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -266,48 +466,48 @@
         
         <li class="frame django">
           
-            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/lib/python3.13/site-packages/django/core/handlers/base.py</code>, line 197, in _get_response
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/core/handlers/base.py</code>, line 197, in _get_response
           
 
           
-            <div class="context" id="c4586479936">
+            <div class="context" id="c4358899648">
               
-                <ol start="190" class="pre-context" id="pre4586479936">
+                <ol start="190" class="pre-context" id="pre4358899648">
                 
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre></pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>        if response is None:</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>        if response is None:</pre></li>
                 
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
                 
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
                 
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
                 
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
                 
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>            try:</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>            try:</pre></li>
                 
                 </ol>
               
               <ol start="197" class="context-line">
-                <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)
+                <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)
                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
               </ol>
               
-                <ol start='198' class="post-context" id="post4586479936">
+                <ol start='198' class="post-context" id="post4358899648">
                   
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>            except Exception as e:</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>            except Exception as e:</pre></li>
                   
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
                   
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>                if response is None:</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>                if response is None:</pre></li>
                   
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>                    raise</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>                    raise</pre></li>
                   
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre></pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre4586479936', 'post4586479936')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  <li onclick="toggle('pre4358899648', 'post4358899648')"><pre>        # Complain if the view returned None (a common error).</pre></li>
                   
               </ol>
               
@@ -319,7 +519,7 @@
               <details>
                 <summary class="commands">Local vars</summary>
             
-            <table class="vars" id="v4586479936">
+            <table class="vars" id="v4358899648">
               <thead>
                 <tr>
                   <th scope="col">Variable</th>
@@ -330,7 +530,7 @@
                 
                   <tr>
                     <td>callback</td>
-                    <td class="code"><pre>&lt;function snippet_detail at 0x1112ccb80&gt;</pre></td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0x103b64ae0&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -340,7 +540,7 @@
                 
                   <tr>
                     <td>callback_kwargs</td>
-                    <td class="code"><pre>{&#x27;pk&#x27;: 3}</pre></td>
+                    <td class="code"><pre>{}</pre></td>
                   </tr>
                 
                   <tr>
@@ -350,7 +550,7 @@
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&lt;WSGIRequest: DELETE &#x27;/snippets/3&#x27;&gt;</pre></td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -360,12 +560,12 @@
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x11130d6a0&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x103b3af90&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>wrapped_callback</td>
-                    <td class="code"><pre>&lt;function snippet_detail at 0x1112ccb80&gt;</pre></td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0x103b64ae0&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -377,44 +577,44 @@
         
         <li class="frame django">
           
-            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/lib/python3.13/site-packages/django/views/decorators/csrf.py</code>, line 65, in _view_wrapper
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py</code>, line 65, in _view_wrapper
           
 
           
-            <div class="context" id="c4586472448">
+            <div class="context" id="c4358913920">
               
-                <ol start="58" class="pre-context" id="pre4586472448">
+                <ol start="58" class="pre-context" id="pre4358913920">
                 
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre></pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre>        async def _view_wrapper(request, *args, **kwargs):</pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre>        async def _view_wrapper(request, *args, **kwargs):</pre></li>
                 
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre>            return await view_func(request, *args, **kwargs)</pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre>            return await view_func(request, *args, **kwargs)</pre></li>
                 
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre></pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre>    else:</pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre>    else:</pre></li>
                 
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre></pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre>        def _view_wrapper(request, *args, **kwargs):</pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre>        def _view_wrapper(request, *args, **kwargs):</pre></li>
                 
                 </ol>
               
               <ol start="65" class="context-line">
-                <li onclick="toggle('pre4586472448', 'post4586472448')"><pre>            return view_func(request, *args, **kwargs)
+                <li onclick="toggle('pre4358913920', 'post4358913920')"><pre>            return view_func(request, *args, **kwargs)
                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
               </ol>
               
-                <ol start='66' class="post-context" id="post4586472448">
+                <ol start='66' class="post-context" id="post4358913920">
                   
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre></pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre>    _view_wrapper.csrf_exempt = True</pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre>    _view_wrapper.csrf_exempt = True</pre></li>
                   
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre></pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre4586472448', 'post4586472448')"><pre>    return wraps(view_func)(_view_wrapper)</pre></li>
+                  <li onclick="toggle('pre4358913920', 'post4358913920')"><pre>    return wraps(view_func)(_view_wrapper)</pre></li>
                   
               </ol>
               
@@ -426,7 +626,7 @@
               <details>
                 <summary class="commands">Local vars</summary>
             
-            <table class="vars" id="v4586472448">
+            <table class="vars" id="v4358913920">
               <thead>
                 <tr>
                   <th scope="col">Variable</th>
@@ -442,17 +642,17 @@
                 
                   <tr>
                     <td>kwargs</td>
-                    <td class="code"><pre>{&#x27;pk&#x27;: 3}</pre></td>
+                    <td class="code"><pre>{}</pre></td>
                   </tr>
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&lt;WSGIRequest: DELETE &#x27;/snippets/3&#x27;&gt;</pre></td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>view_func</td>
-                    <td class="code"><pre>&lt;function snippet_detail at 0x1112ccae0&gt;</pre></td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0x1039e05e0&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -462,42 +662,50 @@
         </li>
       
         
-        <li class="frame user">
+        <li class="frame django">
           
-            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/snippets/views.py</code>, line 56, in snippet_detail
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/views/generic/base.py</code>, line 104, in view
           
 
           
-            <div class="context" id="c4586474496">
+            <div class="context" id="c4359569280">
               
-                <ol start="49" class="pre-context" id="pre4586474496">
+                <ol start="97" class="pre-context" id="pre4359569280">
                 
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>        data = JSONParser().parse(request)</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>            self = cls(**initkwargs)</pre></li>
                 
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>        serializer = SnippetSerializer(snippet, data=data)</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>            self.setup(request, *args, **kwargs)</pre></li>
                 
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>        if serializer.is_valid():</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>            if not hasattr(self, &quot;request&quot;):</pre></li>
                 
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>            serializer.save()</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>                raise AttributeError(</pre></li>
                 
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>            return JsonResponse(serializer.data)</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>                    &quot;%s instance has no &#x27;request&#x27; attribute. Did you override &quot;</pre></li>
                 
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>        return JsonResponse(serializer.errors, status=400)</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>                    &quot;setup() and forget to call super()?&quot; % cls.__name__</pre></li>
                 
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>    </pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>                )</pre></li>
                 
                 </ol>
               
-              <ol start="56" class="context-line">
-                <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>    elif request.methos == &quot;DELETE&quot;:
-             ^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              <ol start="104" class="context-line">
+                <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>            return self.dispatch(request, *args, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
               </ol>
               
-                <ol start='57' class="post-context" id="post4586474496">
+                <ol start='105' class="post-context" id="post4359569280">
                   
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>        snippet.delete()</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre4586474496', 'post4586474496')"><pre>        return HttpResponse(status=204)</pre></li>
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>        view.view_class = cls</pre></li>
+                  
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>        view.view_initkwargs = initkwargs</pre></li>
+                  
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>        # __name__ and __qualname__ are intentionally left unchanged as</pre></li>
+                  
+                  <li onclick="toggle('pre4359569280', 'post4359569280')"><pre>        # view_class should be used to robustly determine the name of the view</pre></li>
                   
               </ol>
               
@@ -509,7 +717,7 @@
               <details>
                 <summary class="commands">Local vars</summary>
             
-            <table class="vars" id="v4586474496">
+            <table class="vars" id="v4359569280">
               <thead>
                 <tr>
                   <th scope="col">Variable</th>
@@ -519,18 +727,1823 @@
               <tbody>
                 
                   <tr>
-                    <td>pk</td>
-                    <td class="code"><pre>3</pre></td>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cls</td>
+                    <td class="code"><pre>&lt;class &#x27;rest_framework.authtoken.views.ObtainAuthToken&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>initkwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
                   </tr>
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&lt;WSGIRequest: DELETE &#x27;/snippets/3&#x27;&gt;</pre></td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>snippet</td>
-                    <td class="code"><pre>&lt;Snippet: Snippet object (3)&gt;</pre></td>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py</code>, line 509, in dispatch
+          
+
+          
+            <div class="context" id="c4358902400">
+              
+                <ol start="502" class="pre-context" id="pre4358902400">
+                
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>            response = handler(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>        except Exception as exc:</pre></li>
+                
+                </ol>
+              
+              <ol start="509" class="context-line">
+                <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>            response = self.handle_exception(exc)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='510' class="post-context" id="post4358902400">
+                  
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>        return self.response</pre></li>
+                  
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>    def options(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre4358902400', 'post4358902400')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358902400">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ObtainAuthToken.post of &lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py</code>, line 469, in handle_exception
+          
+
+          
+            <div class="context" id="c4358911552">
+              
+                <ol start="462" class="pre-context" id="pre4358911552">
+                
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>        exception_handler = self.get_exception_handler()</pre></li>
+                
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>        context = self.get_exception_handler_context()</pre></li>
+                
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>        response = exception_handler(exc, context)</pre></li>
+                
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>        if response is None:</pre></li>
+                
+                </ol>
+              
+              <ol start="469" class="context-line">
+                <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>            self.raise_uncaught_exception(exc)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='470' class="post-context" id="post4358911552">
+                  
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>        response.exception = True</pre></li>
+                  
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                  
+                  <li onclick="toggle('pre4358911552', 'post4358911552')"><pre>        if settings.DEBUG:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358911552">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;args&#x27;: (),
+ &#x27;kwargs&#x27;: {},
+ &#x27;request&#x27;: &lt;rest_framework.request.Request: POST &#x27;/api-token-auth/&#x27;&gt;,
+ &#x27;view&#x27;: &lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>OperationalError(&#x27;no such table: authtoken_token&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exception_handler</td>
+                    <td class="code"><pre>&lt;function exception_handler at 0x103b46340&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py</code>, line 480, in raise_uncaught_exception
+          
+
+          
+            <div class="context" id="c4357142272">
+              
+                <ol start="473" class="pre-context" id="pre4357142272">
+                
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>        if settings.DEBUG:</pre></li>
+                
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>            request = self.request</pre></li>
+                
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>            renderer_format = getattr(request.accepted_renderer, &#x27;format&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>            use_plaintext_traceback = renderer_format not in (&#x27;html&#x27;, &#x27;api&#x27;, &#x27;admin&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>            request.force_plaintext_errors(use_plaintext_traceback)</pre></li>
+                
+                </ol>
+              
+              <ol start="480" class="context-line">
+                <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>        raise exc
+             ^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='481' class="post-context" id="post4357142272">
+                  
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>    # Note: Views are made CSRF exempt from within `as_view` as to prevent</pre></li>
+                  
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>    # accidental removal of this exemption in cases where `dispatch` needs to</pre></li>
+                  
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>    # be overridden.</pre></li>
+                  
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>    def dispatch(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre4357142272', 'post4357142272')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4357142272">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>OperationalError(&#x27;no such table: authtoken_token&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>renderer_format</td>
+                    <td class="code"><pre>&#x27;json&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>use_plaintext_traceback</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py</code>, line 506, in dispatch
+          
+
+          
+            <div class="context" id="c4358901824">
+              
+                <ol start="499" class="pre-context" id="pre4358901824">
+                
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>            # Get the appropriate handler method</pre></li>
+                
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>            if request.method.lower() in self.http_method_names:</pre></li>
+                
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>                handler = getattr(self, request.method.lower(),</pre></li>
+                
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="506" class="context-line">
+                <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>            response = handler(request, *args, **kwargs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='507' class="post-context" id="post4358901824">
+                  
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>            response = self.handle_exception(exc)</pre></li>
+                  
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre4358901824', 'post4358901824')"><pre>        return self.response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358901824">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ObtainAuthToken.post of &lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/authtoken/views.py</code>, line 58, in post
+          
+
+          
+            <div class="context" id="c4358899712">
+              
+                <ol start="51" class="pre-context" id="pre4358899712">
+                
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>        kwargs[&#x27;context&#x27;] = self.get_serializer_context()</pre></li>
+                
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>        return self.serializer_class(*args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>    def post(self, request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>        serializer = self.get_serializer(data=request.data)</pre></li>
+                
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>        serializer.is_valid(raise_exception=True)</pre></li>
+                
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>        user = serializer.validated_data[&#x27;user&#x27;]</pre></li>
+                
+                </ol>
+              
+              <ol start="58" class="context-line">
+                <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>        token, created = Token.objects.get_or_create(user=user)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='59' class="post-context" id="post4358899712">
+                  
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>        return Response({&#x27;token&#x27;: token.key})</pre></li>
+                  
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358899712', 'post4358899712')"><pre>obtain_auth_token = ObtainAuthToken.as_view()</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358899712">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api-token-auth/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;rest_framework.authtoken.views.ObtainAuthToken object at 0x103bfa660&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>serializer</td>
+                    <td class="code"><pre>AuthTokenSerializer(context={&#x27;request&#x27;: &lt;rest_framework.request.Request: POST &#x27;/api-token-auth/&#x27;&gt;, &#x27;format&#x27;: None, &#x27;view&#x27;: &lt;rest_framework.authtoken.views.ObtainAuthToken object&gt;}, data={&#x27;username&#x27;: &#x27;rkorzen&#x27;, &#x27;password&#x27;: &#x27;123&#x27;}):
+    username = CharField(label=&#x27;Username&#x27;, write_only=True)
+    password = CharField(label=&#x27;Password&#x27;, style={&#x27;input_type&#x27;: &#x27;password&#x27;}, trim_whitespace=False, write_only=True)
+    token = CharField(label=&#x27;Token&#x27;, read_only=True)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>user</td>
+                    <td class="code"><pre>&lt;User: rkorzen&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/manager.py</code>, line 87, in manager_method
+          
+
+          
+            <div class="context" id="c4358732928">
+              
+                <ol start="80" class="pre-context" id="pre4358732928">
+                
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>        return []</pre></li>
+                
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>    @classmethod</pre></li>
+                
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>    def _get_queryset_methods(cls, queryset_class):</pre></li>
+                
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>        def create_method(name, method):</pre></li>
+                
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>            @wraps(method)</pre></li>
+                
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>            def manager_method(self, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="87" class="context-line">
+                <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>                return getattr(self.get_queryset(), name)(*args, **kwargs)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='88' class="post-context" id="post4358732928">
+                  
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>            return manager_method</pre></li>
+                  
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>        new_methods = {}</pre></li>
+                  
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>        for name, method in inspect.getmembers(</pre></li>
+                  
+                  <li onclick="toggle('pre4358732928', 'post4358732928')"><pre>            queryset_class, predicate=inspect.isfunction</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358732928">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;user&#x27;: &lt;User: rkorzen&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>name</td>
+                    <td class="code"><pre>&#x27;get_or_create&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.models.manager.Manager object at 0x103a7fce0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py</code>, line 948, in get_or_create
+          
+
+          
+            <div class="context" id="c4358192832">
+              
+                <ol start="941" class="pre-context" id="pre4358192832">
+                
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        Return a tuple of (object, created), where created is a boolean</pre></li>
+                
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        specifying whether an object was created.</pre></li>
+                
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        # The get() needs to be targeted at the write database in order</pre></li>
+                
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        # to avoid potential transaction consistency problems.</pre></li>
+                
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        self._for_write = True</pre></li>
+                
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="948" class="context-line">
+                <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>            return self.get(**kwargs), False
+                        ^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='949' class="post-context" id="post4358192832">
+                  
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>        except self.model.DoesNotExist:</pre></li>
+                  
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>            params = self._extract_model_params(defaults, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>            # Try to create an object using passed params.</pre></li>
+                  
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>            try:</pre></li>
+                  
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>                with transaction.atomic(using=self.db):</pre></li>
+                  
+                  <li onclick="toggle('pre4358192832', 'post4358192832')"><pre>                    params = dict(resolve_callables(params))</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358192832">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>defaults</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;user&#x27;: &lt;User: rkorzen&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>Error in formatting: OperationalError: no such table: authtoken_token</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py</code>, line 645, in get
+          
+
+          
+            <div class="context" id="c4358902208">
+              
+                <ol start="638" class="pre-context" id="pre4358902208">
+                
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>        limit = None</pre></li>
+                
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>        if (</pre></li>
+                
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>            not clone.query.select_for_update</pre></li>
+                
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>            or connections[clone.db].features.supports_select_for_update_with_limit</pre></li>
+                
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>        ):</pre></li>
+                
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>            limit = MAX_GET_RESULTS</pre></li>
+                
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>            clone.query.set_limits(high=limit)</pre></li>
+                
+                </ol>
+              
+              <ol start="645" class="context-line">
+                <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>        num = len(clone)
+                   ^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='646' class="post-context" id="post4358902208">
+                  
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>        if num == 1:</pre></li>
+                  
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>            return clone._result_cache[0]</pre></li>
+                  
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>        if not num:</pre></li>
+                  
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>            raise self.model.DoesNotExist(</pre></li>
+                  
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>                &quot;%s matching query does not exist.&quot; % self.model._meta.object_name</pre></li>
+                  
+                  <li onclick="toggle('pre4358902208', 'post4358902208')"><pre>            )</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358902208">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>clone</td>
+                    <td class="code"><pre>Error in formatting: OperationalError: no such table: authtoken_token</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;user&#x27;: &lt;User: rkorzen&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>limit</td>
+                    <td class="code"><pre>21</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>Error in formatting: OperationalError: no such table: authtoken_token</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py</code>, line 382, in __len__
+          
+
+          
+            <div class="context" id="c4358913280">
+              
+                <ol start="375" class="pre-context" id="pre4358913280">
+                
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>    def __repr__(self):</pre></li>
+                
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        data = list(self[: REPR_OUTPUT_SIZE + 1])</pre></li>
+                
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        if len(data) &gt; REPR_OUTPUT_SIZE:</pre></li>
+                
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>            data[-1] = &quot;...(remaining elements truncated)...&quot;</pre></li>
+                
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        return &quot;&lt;%s %r&gt;&quot; % (self.__class__.__name__, data)</pre></li>
+                
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>    def __len__(self):</pre></li>
+                
+                </ol>
+              
+              <ol start="382" class="context-line">
+                <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        self._fetch_all()
+             ^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='383' class="post-context" id="post4358913280">
+                  
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        return len(self._result_cache)</pre></li>
+                  
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>    def __iter__(self):</pre></li>
+                  
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        The queryset iterator protocol uses three nested iterators in the</pre></li>
+                  
+                  <li onclick="toggle('pre4358913280', 'post4358913280')"><pre>        default case:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358913280">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>Error in formatting: OperationalError: no such table: authtoken_token</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py</code>, line 1928, in _fetch_all
+          
+
+          
+            <div class="context" id="c4358795008">
+              
+                <ol start="1921" class="pre-context" id="pre4358795008">
+                
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        c._known_related_objects = self._known_related_objects</pre></li>
+                
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        c._iterable_class = self._iterable_class</pre></li>
+                
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        c._fields = self._fields</pre></li>
+                
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        return c</pre></li>
+                
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>    def _fetch_all(self):</pre></li>
+                
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        if self._result_cache is None:</pre></li>
+                
+                </ol>
+              
+              <ol start="1928" class="context-line">
+                <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>            self._result_cache = list(self._iterable_class(self))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='1929' class="post-context" id="post4358795008">
+                  
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        if self._prefetch_related_lookups and not self._prefetch_done:</pre></li>
+                  
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>            self._prefetch_related_objects()</pre></li>
+                  
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>    def _next_is_sticky(self):</pre></li>
+                  
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre4358795008', 'post4358795008')"><pre>        Indicate that the next filter call and the one following that should</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358795008">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>Error in formatting: OperationalError: no such table: authtoken_token</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py</code>, line 91, in __iter__
+          
+
+          
+            <div class="context" id="c4358901760">
+              
+                <ol start="84" class="pre-context" id="pre4358901760">
+                
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>    def __iter__(self):</pre></li>
+                
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        queryset = self.queryset</pre></li>
+                
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        db = queryset.db</pre></li>
+                
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        compiler = queryset.query.get_compiler(using=db)</pre></li>
+                
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        # Execute the query. This will also fill compiler.select, klass_info,</pre></li>
+                
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        # and annotations.</pre></li>
+                
+                </ol>
+              
+              <ol start="91" class="context-line">
+                <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        results = compiler.execute_sql(
+                      </pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='92' class="post-context" id="post4358901760">
+                  
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>            chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size</pre></li>
+                  
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        )</pre></li>
+                  
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>        select, klass_info, annotation_col_map = (</pre></li>
+                  
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>            compiler.select,</pre></li>
+                  
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>            compiler.klass_info,</pre></li>
+                  
+                  <li onclick="toggle('pre4358901760', 'post4358901760')"><pre>            compiler.annotation_col_map,</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358901760">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>compiler</td>
+                    <td class="code"><pre>&lt;SQLCompiler model=Token connection=&lt;DatabaseWrapper vendor=&#x27;sqlite&#x27; alias=&#x27;default&#x27;&gt; using=&#x27;default&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>db</td>
+                    <td class="code"><pre>&#x27;default&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>queryset</td>
+                    <td class="code"><pre>Error in formatting: OperationalError: no such table: authtoken_token</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.models.query.ModelIterable object at 0x103c13390&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/sql/compiler.py</code>, line 1574, in execute_sql
+          
+
+          
+            <div class="context" id="c4358911488">
+              
+                <ol start="1567" class="pre-context" id="pre4358911488">
+                
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>                return</pre></li>
+                
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>        if chunked_fetch:</pre></li>
+                
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>            cursor = self.connection.chunked_cursor()</pre></li>
+                
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>        else:</pre></li>
+                
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>            cursor = self.connection.cursor()</pre></li>
+                
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="1574" class="context-line">
+                <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>            cursor.execute(sql, params)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='1575' class="post-context" id="post4358911488">
+                  
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>        except Exception:</pre></li>
+                  
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>            # Might fail for server-side cursors (e.g. connection closed)</pre></li>
+                  
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>            cursor.close()</pre></li>
+                  
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>            raise</pre></li>
+                  
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358911488', 'post4358911488')"><pre>        if result_type == CURSOR:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358911488">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>chunk_size</td>
+                    <td class="code"><pre>100</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>chunked_fetch</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cursor</td>
+                    <td class="code"><pre>&lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>result_type</td>
+                    <td class="code"><pre>&#x27;multi&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;SQLCompiler model=Token connection=&lt;DatabaseWrapper vendor=&#x27;sqlite&#x27; alias=&#x27;default&#x27;&gt; using=&#x27;default&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = %s LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py</code>, line 122, in execute
+          
+
+          
+            <div class="context" id="c4358908544">
+              
+                <ol start="115" class="pre-context" id="pre4358908544">
+                
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>class CursorDebugWrapper(CursorWrapper):</pre></li>
+                
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>    # XXX callproc isn&#x27;t instrumented at this time.</pre></li>
+                
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>    def execute(self, sql, params=None):</pre></li>
+                
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>        with self.debug_sql(sql, params, use_last_executed_query=True):</pre></li>
+                
+                </ol>
+              
+              <ol start="122" class="context-line">
+                <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>            return super().execute(sql, params)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='123' class="post-context" id="post4358908544">
+                  
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>    def executemany(self, sql, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>        with self.debug_sql(sql, param_list, many=True):</pre></li>
+                  
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>            return super().executemany(sql, param_list)</pre></li>
+                  
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358908544', 'post4358908544')"><pre>    @contextmanager</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358908544">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>__class__</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.backends.utils.CursorDebugWrapper&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = %s LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py</code>, line 79, in execute
+          
+
+          
+            <div class="context" id="c4358909312">
+              
+                <ol start="72" class="pre-context" id="pre4358909312">
+                
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>            elif kparams is None:</pre></li>
+                
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>                return self.cursor.callproc(procname, params)</pre></li>
+                
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>                params = params or ()</pre></li>
+                
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>                return self.cursor.callproc(procname, params, kparams)</pre></li>
+                
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>    def execute(self, sql, params=None):</pre></li>
+                
+                </ol>
+              
+              <ol start="79" class="context-line">
+                <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>        return self._execute_with_wrappers(
+                   </pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='80' class="post-context" id="post4358909312">
+                  
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>            sql, params, many=False, executor=self._execute</pre></li>
+                  
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>        )</pre></li>
+                  
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>    def executemany(self, sql, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>        return self._execute_with_wrappers(</pre></li>
+                  
+                  <li onclick="toggle('pre4358909312', 'post4358909312')"><pre>            sql, param_list, many=True, executor=self._executemany</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358909312">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = %s LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py</code>, line 92, in _execute_with_wrappers
+          
+
+          
+            <div class="context" id="c4358910592">
+              
+                <ol start="85" class="pre-context" id="pre4358910592">
+                
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>            sql, param_list, many=True, executor=self._executemany</pre></li>
+                
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>        )</pre></li>
+                
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>    def _execute_with_wrappers(self, sql, params, many, executor):</pre></li>
+                
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>        context = {&quot;connection&quot;: self.db, &quot;cursor&quot;: self}</pre></li>
+                
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>        for wrapper in reversed(self.db.execute_wrappers):</pre></li>
+                
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>            executor = functools.partial(wrapper, executor)</pre></li>
+                
+                </ol>
+              
+              <ol start="92" class="context-line">
+                <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>        return executor(sql, params, many, context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='93' class="post-context" id="post4358910592">
+                  
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>    def _execute(self, sql, params, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>        # ever set during testing).</pre></li>
+                  
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                  
+                  <li onclick="toggle('pre4358910592', 'post4358910592')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358910592">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;sqlite&#x27; alias=&#x27;default&#x27;&gt;,
+ &#x27;cursor&#x27;: &lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>executor</td>
+                    <td class="code"><pre>&lt;bound method CursorWrapper._execute of &lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>many</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = %s LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py</code>, line 100, in _execute
+          
+
+          
+            <div class="context" id="c4358911296">
+              
+                <ol start="93" class="pre-context" id="pre4358911296">
+                
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>    def _execute(self, sql, params, *ignored_wrapper_args):</pre></li>
+                
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>        # ever set during testing).</pre></li>
+                
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                </ol>
+              
+              <ol start="100" class="context-line">
+                <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>        with self.db.wrap_database_errors:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='101' class="post-context" id="post4358911296">
+                  
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>            if params is None:</pre></li>
+                  
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>                # params default might be backend specific.</pre></li>
+                  
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>                return self.cursor.execute(sql)</pre></li>
+                  
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre>                return self.cursor.execute(sql, params)</pre></li>
+                  
+                  <li onclick="toggle('pre4358911296', 'post4358911296')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358911296">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;sqlite&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = %s LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/utils.py</code>, line 91, in __exit__
+          
+
+          
+            <div class="context" id="c4358910016">
+              
+                <ol start="84" class="pre-context" id="pre4358910016">
+                
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>            db_exc_type = getattr(self.wrapper.Database, dj_exc_type.__name__)</pre></li>
+                
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>            if issubclass(exc_type, db_exc_type):</pre></li>
+                
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>                dj_exc_value = dj_exc_type(*exc_value.args)</pre></li>
+                
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>                # Only set the &#x27;errors_occurred&#x27; flag for errors that may make</pre></li>
+                
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>                # the connection unusable.</pre></li>
+                
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>                if dj_exc_type not in (DataError, IntegrityError):</pre></li>
+                
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>                    self.wrapper.errors_occurred = True</pre></li>
+                
+                </ol>
+              
+              <ol start="91" class="context-line">
+                <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>                raise dj_exc_value.with_traceback(traceback) from exc_value
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='92' class="post-context" id="post4358910016">
+                  
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>    def __call__(self, func):</pre></li>
+                  
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>        # Note that we are intentionally not using @wraps here for performance</pre></li>
+                  
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>        # reasons. Refs #21109.</pre></li>
+                  
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>        def inner(*args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre4358910016', 'post4358910016')"><pre>            with self:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358910016">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>db_exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;sqlite3.OperationalError&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>dj_exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.utils.OperationalError&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>dj_exc_value</td>
+                    <td class="code"><pre>OperationalError(&#x27;no such table: authtoken_token&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;sqlite3.OperationalError&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc_value</td>
+                    <td class="code"><pre>OperationalError(&#x27;no such table: authtoken_token&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.utils.DatabaseErrorWrapper object at 0x103db4190&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>traceback</td>
+                    <td class="code"><pre>&lt;traceback object at 0x103cfbb00&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py</code>, line 105, in _execute
+          
+
+          
+            <div class="context" id="c4358912768">
+              
+                <ol start="98" class="pre-context" id="pre4358912768">
+                
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        with self.db.wrap_database_errors:</pre></li>
+                
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            if params is None:</pre></li>
+                
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>                # params default might be backend specific.</pre></li>
+                
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>                return self.cursor.execute(sql)</pre></li>
+                
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            else:</pre></li>
+                
+                </ol>
+              
+              <ol start="105" class="context-line">
+                <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>                return self.cursor.execute(sql, params)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='106' class="post-context" id="post4358912768">
+                  
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>    def _executemany(self, sql, param_list, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        # ever set during testing).</pre></li>
+                  
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                  
+                  <li onclick="toggle('pre4358912768', 'post4358912768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358912768">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;sqlite&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.utils.CursorDebugWrapper object at 0x103bde780&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = %s LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py</code>, line 354, in execute
+          
+
+          
+            <div class="context" id="c4358902336">
+              
+                <ol start="347" class="pre-context" id="pre4358902336">
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>    def execute(self, query, params=None):</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        if params is None:</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>            return super().execute(query)</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        # Extract names if params is a mapping, i.e. &quot;pyformat&quot; style is used.</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        param_names = list(params) if isinstance(params, Mapping) else None</pre></li>
+                
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        query = self.convert_query(query, param_names=param_names)</pre></li>
+                
+                </ol>
+              
+              <ol start="354" class="context-line">
+                <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        return super().execute(query, params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='355' class="post-context" id="post4358902336">
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>    def executemany(self, query, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        # Extract names if params is a mapping, i.e. &quot;pyformat&quot; style is used.</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        # Peek carefully as a generator can be passed instead of a list/tuple.</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        peekable, param_list = tee(iter(param_list))</pre></li>
+                  
+                  <li onclick="toggle('pre4358902336', 'post4358902336')"><pre>        if (params := next(peekable, None)) and isinstance(params, Mapping):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v4358902336">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>__class__</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.backends.sqlite3.base.SQLiteCursorWrapper&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>param_names</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(1,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>query</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;authtoken_token&quot;.&quot;key&quot;, &quot;authtoken_token&quot;.&quot;user_id&quot;, &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;created&quot; FROM &quot;authtoken_token&quot; WHERE &#x27;
+ &#x27;&quot;authtoken_token&quot;.&quot;user_id&quot; = ? LIMIT 21&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.sqlite3.base.SQLiteCursorWrapper object at 0x103b52c30&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -546,17 +2559,17 @@
   <div id="pastebinTraceback" class="pastebin">
     <input type="hidden" name="language" value="PythonConsole">
     <input type="hidden" name="title"
-      value="AttributeError at /snippets/3">
+      value="OperationalError at /api-token-auth/">
     <input type="hidden" name="source" value="Django Dpaste Agent">
     <input type="hidden" name="poster" value="Django">
     <textarea name="content" id="traceback_area" cols="140" rows="25">
 Environment:
 
 
-Request Method: DELETE
-Request URL: http://127.0.0.1:8000/snippets/3
+Request Method: POST
+Request URL: http://localhost:8000/api-token-auth/
 
-Django Version: 5.1.4
+Django Version: 5.1.6
 Python Version: 3.13.1
 Installed Applications:
 [&#x27;django.contrib.admin&#x27;,
@@ -566,6 +2579,7 @@ Installed Applications:
  &#x27;django.contrib.messages&#x27;,
  &#x27;django.contrib.staticfiles&#x27;,
  &#x27;rest_framework&#x27;,
+ &#x27;rest_framework.authtoken&#x27;,
  &#x27;snippets.apps.SnippetsConfig&#x27;]
 Installed Middleware:
 [&#x27;django.middleware.security.SecurityMiddleware&#x27;,
@@ -579,21 +2593,86 @@ Installed Middleware:
 
 
 Traceback (most recent call last):
-  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The above exception (no such table: authtoken_token) was the direct cause of the following exception:
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/snippets/views.py", line 56, in snippet_detail
-    elif request.methos == &quot;DELETE&quot;:
-         ^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+    ^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/rest_framework/authtoken/views.py", line 58, in post
+    token, created = Token.objects.get_or_create(user=user)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/lib/python3.13/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Exception Type: AttributeError at /snippets/3
-Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x27;
+Exception Type: OperationalError at /api-token-auth/
+Exception Value: no such table: authtoken_token
 </textarea>
   <br><br>
   <input type="submit" value="Share this traceback on a public website">
@@ -664,17 +2743,17 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>CONTENT_LENGTH</td>
-          <td class="code"><pre>&#x27;&#x27;</pre></td>
+          <td class="code"><pre>&#x27;52&#x27;</pre></td>
         </tr>
       
         <tr>
           <td>CONTENT_TYPE</td>
-          <td class="code"><pre>&#x27;text/plain&#x27;</pre></td>
+          <td class="code"><pre>&#x27;application/json&#x27;</pre></td>
         </tr>
       
         <tr>
           <td>CURSOR_TRACE_ID</td>
-          <td class="code"><pre>&#x27;da1e3f80e6924c0c86f98fb3a4c54538&#x27;</pre></td>
+          <td class="code"><pre>&#x27;d3c0c0ab281b4f22836011e8a9f82bce&#x27;</pre></td>
         </tr>
       
         <tr>
@@ -729,7 +2808,7 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>HTTP_HOST</td>
-          <td class="code"><pre>&#x27;127.0.0.1:8000&#x27;</pre></td>
+          <td class="code"><pre>&#x27;localhost:8000&#x27;</pre></td>
         </tr>
       
         <tr>
@@ -819,17 +2898,17 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>PATH</td>
-          <td class="code"><pre>&#x27;/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/bin:/Users/rkorzen/.bun/bin:/Applications/PyCharm.app/Contents/MacOS:/Users/rkorzen/google-cloud-sdk/bin:/Users/rkorzen/.cursor/extensions/ms-python.python-2024.12.3-darwin-x64/python_files/deactivate/zsh:/Users/rkorzen/PycharmProjects/tutorials/ell-ai-tutorial/.venv/bin:/Users/rkorzen/.bun/bin:/Applications/PyCharm.app/Contents/MacOS:/Users/rkorzen/google-cloud-sdk/bin:/Users/rkorzen/.cursor/extensions/ms-python.python-2024.12.3-darwin-x64/python_files/deactivate/zsh:/Users/rkorzen/PycharmProjects/tutorials/ell-ai-tutorial/.venv/bin:/Users/rkorzen/.nvm/versions/node/v18.20.6/bin:/Users/rkorzen/.bun/bin:/Applications/PyCharm.app/Contents/MacOS:/Users/rkorzen/google-cloud-sdk/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Applications/Postgres.app/Contents:/Users/rkorzen/.cargo/bin:/Applications/iTerm.app/Contents/Resources/utilities:/usr/local/opt/rabbitmq/sbin:/usr/local/opt/rabbitmq/sbin:/usr/local/opt/rabbitmq/sbin&#x27;</pre></td>
+          <td class="code"><pre>&#x27;/Users/rkorzen/.cursor/extensions/ms-python.python-2024.12.3-darwin-x64/python_files/deactivate/zsh:/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/bin:/Users/rkorzen/.nvm/versions/node/v18.20.6/bin:/Users/rkorzen/.bun/bin:/Applications/PyCharm.app/Contents/MacOS:/Users/rkorzen/google-cloud-sdk/bin:/Users/rkorzen/.cursor/extensions/ms-python.python-2024.12.3-darwin-x64/python_files/deactivate/zsh:/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Applications/Postgres.app/Contents:/Users/rkorzen/.cursor/extensions/ms-python.python-2024.12.3-darwin-x64/python_files/deactivate/zsh:/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/bin:/Users/rkorzen/.nvm/versions/node/v18.20.6/bin:/Users/rkorzen/.bun/bin:/Applications/PyCharm.app/Contents/MacOS:/Users/rkorzen/google-cloud-sdk/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/rkorzen/.cargo/bin:/Applications/iTerm.app/Contents/Resources/utilities:/usr/local/opt/rabbitmq/sbin:/usr/local/opt/rabbitmq/sbin&#x27;</pre></td>
         </tr>
       
         <tr>
           <td>PATH_INFO</td>
-          <td class="code"><pre>&#x27;/snippets/3&#x27;</pre></td>
+          <td class="code"><pre>&#x27;/api-token-auth/&#x27;</pre></td>
         </tr>
       
         <tr>
           <td>PS1</td>
-          <td class="code"><pre>(&#x27;(venv313) %(?:%{\x1b[01;32m%}➜ :%{\x1b[01;31m%}➜ ) &#x27;
+          <td class="code"><pre>(&#x27;.venv%(?:%{\x1b[01;32m%}➜ :%{\x1b[01;31m%}➜ ) &#x27;
  &#x27;%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&#x27;)</pre></td>
         </tr>
       
@@ -855,7 +2934,7 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>REQUEST_METHOD</td>
-          <td class="code"><pre>&#x27;DELETE&#x27;</pre></td>
+          <td class="code"><pre>&#x27;POST&#x27;</pre></td>
         </tr>
       
         <tr>
@@ -895,7 +2974,7 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>SHLVL</td>
-          <td class="code"><pre>&#x27;5&#x27;</pre></td>
+          <td class="code"><pre>&#x27;3&#x27;</pre></td>
         </tr>
       
         <tr>
@@ -955,12 +3034,12 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>VIRTUAL_ENV</td>
-          <td class="code"><pre>&#x27;/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313&#x27;</pre></td>
+          <td class="code"><pre>&#x27;/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv&#x27;</pre></td>
         </tr>
       
         <tr>
           <td>VIRTUAL_ENV_PROMPT</td>
-          <td class="code"><pre>&#x27;venv313&#x27;</pre></td>
+          <td class="code"><pre>&#x27;.venv&#x27;</pre></td>
         </tr>
       
         <tr>
@@ -1010,7 +3089,7 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>_</td>
-          <td class="code"><pre>&#x27;/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/venv313/bin/python&#x27;</pre></td>
+          <td class="code"><pre>&#x27;/Users/rkorzen/PycharmProjects/szkolenia/alx/alx_2024_12_21/projekty/drf_tutorial/.venv/bin/python&#x27;</pre></td>
         </tr>
       
         <tr>
@@ -1035,7 +3114,7 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
       
         <tr>
           <td>wsgi.input</td>
-          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0x11161a620&gt;</pre></td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0x1039b0190&gt;</pre></td>
         </tr>
       
         <tr>
@@ -1457,6 +3536,7 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
  &#x27;django.contrib.messages&#x27;,
  &#x27;django.contrib.staticfiles&#x27;,
  &#x27;rest_framework&#x27;,
+ &#x27;rest_framework.authtoken&#x27;,
  &#x27;snippets.apps.SnippetsConfig&#x27;]</pre></td>
         </tr>
       
@@ -1702,6 +3782,11 @@ Exception Value: &#x27;WSGIRequest&#x27; object has no attribute &#x27;methos&#x
         <tr>
           <td>PREPEND_WWW</td>
           <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REST_FAMEWORK</td>
+          <td class="code"><pre>{&#x27;DEFAULT_AUTHENTICATION_CLASSES&#x27;: [&#x27;rest_framework.authentication.TokenAuthentication&#x27;]}</pre></td>
         </tr>
       
         <tr>

@@ -26,3 +26,25 @@ PUT http://127.0.0.1:8000/snippets/3
 ### 
 
 DELETE http://127.0.0.1:8000/snippets/3
+
+
+### 
+
+POST http://localhost:8000/api-token-auth/
+Content-Type: application/json
+
+{
+    "username": "rkorzen",
+    "password": "123"
+}
+
+
+### 
+POST http://localhost:8000/snippets/
+Authorization: Token fbeb3969de7d332f089342045869659c66c5b24d
+Content-Type: application/json
+
+
+{
+    "code": "10 + 20"
+}
